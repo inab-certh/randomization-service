@@ -1,6 +1,7 @@
 <a name="readme-top"></a>
 
 <!-- ABOUT THE PROJECT -->
+# Randomization of RCT participants web App
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](http://snf-880200.vm.okeanos.grnet.gr/randomizationservice/dashboard)
