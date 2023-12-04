@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/png" href="../static/assets/img/favicon.ico">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>{% block title %}INAB's RCT Algorithm{% endblock %}</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+
+    <!-- Bootstrap core CSS     -->
+    <link href="../static/assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Animation library for notifications   -->
+    <link href="../static/assets/css/animate.min.css" rel="stylesheet"/>
+
+    <!--  Light Bootstrap Table core CSS    -->
+    <link href="../static/assets/css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet"/>
+
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="../static/assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+
+</head>
+{% block content %}
+<body>
+
+<div class="wrapper">
+    <div class="sidebar" data-color="#343a40" data-image="../static/assets/img/background.jpg">
+
+    <!--
+
+        Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
+        Tip 2: you can also add an image using data-image tag
+
+    -->
+
+    	<div class="sidebar-wrapper">
+            <div class="logo">
+                <a href="#" class="simple-text">
+                    RCT ALGORITHM
+                </a>
+            </div>
+
+            <ul class="nav">
+                <li class="nav-link active">
+                    <a class="nav-link" href="/randomizationservice/dashboard">
+                        <i class="pe-7s-home"></i>
+                        <p>Home Page</p>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a class="navbar-link" href="/randomizationservice/listofparticipants">
+                        <i class="pe-7s-users"></i>
+                        <p>Assign List of Participants</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-link" href="/randomizationservice/singleparticipant">
+                        <i class="pe-7s-add-user"></i>
+                        <p>Assign Single Participant</p>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a class="navbar-link" href="/randomizationservice/checkservicestatus">
+                        <i class="pe-7s-info"></i>
+                        <p>Check Service Status</p>
+                    </a>
+                </li>
+
+            </ul>
+    	</div>
+    </div>
+
+    <div class="main-panel">
+        <nav class="navbar navbar-default navbar-fixed">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"> Home Page</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-dashboard"></i>
+                                <p class="hidden-lg hidden-md">Home Page</p>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!--<ul class="nav navbar-nav navbar-right">
+                        <li>
+                           <a href="">
+                               Account
+                            </a>
+                        </li>
+                    </ul>-->
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-header">
+                                <p></p>
+                                <h5 class="card-category text-muted">For the needs of group assignment Randomization in RCTs</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="typography-line text-center">
+                                    <h3>How to use it?</h3>
+                                    <p>Navigate to the appropriate module. Enter the parameters you want and randomize your trial</p>
+                                </div>
+                                <div class="places-buttons">
+                                    <div class="row">
+                                        <div class="col-md-6 col-md-offset-3 text-center">
+                                            <h2>Available Functionalities
+                                               <p class="category">Click to Navigate to each functionality</p>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col text-center">
+                                            <button class="btn btn-warning" onclick="window.location='./listofparticipants'">Assign List of Participants</button>
+                                        </div>
+                                        <p></p>
+                                        <div class="col text-center">
+                                            <button class="btn btn-info" onclick="window.location='./singleparticipant'">Assign Single Participant</button>
+                                        </div>
+                                        <p></p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mx-auto">
+                            <p></p>
+                          <img class="card-img-top" src="https://www.inab.certh.gr/img/logo.jpg" alt="Card image cap">
+                          <div class="card-body p-4">
+                            <h4 class="card-title mb-4">Institute of Applied Biosciences</h4>
+                            <p class="card-text">INAB is at the forefront of research and applications in Life Sciences, placing Biomedicine and Agri-biotechnology as the main research pillars and aiming at a holistic approach of Well-being within the context of One Health..</p>
+                            <a href="https://www.inab.certh.gr/" class="btn btn-primary">Visit Website!</a> <p></p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-4">
+                            <p></p>
+                          <img class="card-img-top" src="https://www.certh.gr/skn/logo_en.png" alt="Card image cap">
+                          <div class="card-body p-4">
+                            <h4 class="card-title">Centre for Research and Technology Hellas</h4>
+                            <p class="card-text">CERTH was founded in 2000 is one of the leading research centres in Greece and listed among the TOP-20 E.U. research institutions with the highest participation in competitive research grants..</p>
+                            <a href="https://www.certh.gr/" class="btn btn-primary">Visit Website!</a> <p> </p>
+                          </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <nav class="pull-left">
+                    <ul>
+                        <li>
+                            <a href="#">
+                               <!--Home-->
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+                <p class="copyright pull-right">
+                    &copy; <script>document.write(new Date().getFullYear())</script> <a href="https://www.linkedin.com/in/panos-bonotis-351a7996/">Panos Bonotis INAB|CERTH</a>, made for INAB's projects needs
+                </p>
+            </div>
+        </footer>
+
+    </div>
+</div>
+
+{% endblock %}
+</body>
+
+    <!--   Core JS Files   -->
+    <script src="../static/assets/js/jquery.3.2.1.min.js" type="text/javascript"></script>
+	<script src="../static/assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+	<!--  Charts Plugin -->
+	<script src="../static/assets/js/chartist.min.js"></script>
+
+    <!--  Notifications Plugin    -->
+    <script src="../static/assets/js/bootstrap-notify.js"></script>
+
+    <!--  Google Maps Plugin    -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+
+    <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
+	<script src="../static/assets/js/light-bootstrap-dashboard.js?v=1.4.0"></script>
+
+	<!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
+	<script src="../static/assets/js/demo.js"></script>
+
+
+</html>
