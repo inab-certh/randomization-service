@@ -10,13 +10,11 @@ A simple web service for the randomization of patients prior to an Randomized Cl
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Built and Deployed With
+### Built With
 
 * Flask
 * Flask-RESTful
 * Jinja2
-* Nginx
-* Gunicorn
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -41,7 +39,8 @@ Use these instruction and Clone the repository locally (instructions below) and 
    ```sh
    git clone https://github.com/inab-certh/randomization-service.git
    ```
-2. Install the required packages. All needed packages have been exported to the "requirements.txt" file
+2. Create, and activate a virtual environment
+3. Install the required packages. All needed packages have been exported to the "requirements.txt" file
    ```sh
    pip install -r requirements.txt
    ```
@@ -78,6 +77,14 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- CONTACT -->
+## Contact
+
+Panos Bonotis - [LinkedIn](https://www.linkedin.com/in/panos-bonotis-351a7996/) - pbonotis@certh.gr
+
+Demo Link: [http://snf-880200.vm.okeanos.grnet.gr/randomizationservice/dashboard](http://snf-880200.vm.okeanos.grnet.gr/randomizationservice/dashboard)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments and References
